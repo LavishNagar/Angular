@@ -1,0 +1,32 @@
+#button1, #button2{
+    height: 80px;
+    width: 220px;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: green;
+    font-size: 25px;
+    padding: 5px;
+    
+}
+.body{
+    height: 96vh;
+    width: 98vw;
+    background-color: rgb(94, 55, 55);
+}
+p{
+border: 3px solid black;
+padding: 22px 25px;
+background-color: pink;
+border-radius: 6px;
+margin: 10px 18px;
+font-size:32px ;
+}
+
+.counter{
+    position: relative;
+    top: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
