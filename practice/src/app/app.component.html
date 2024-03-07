@@ -1,0 +1,24 @@
+<h1>welcome page {{ title }}</h1>
+
+<!-- <h1 *ngIf="name == 'Lavish' then checkif else checkelse">Syntax is correct</h1>
+
+<ng-template #checkif>
+  <h2>Syntax is correct with checkif condition</h2>
+  </ng-template>
+  <ng-template #checkelse>
+  <h2 style="color: red;">Syntax is correct with elseif condition</h2>
+  </ng-template> -->
+
+<!-- <h1 *ngFor="let item of list">{{item}}</h1> -->
+<!-- 
+<input type="text" [value]=name> -->
+
+<input type="text" placeholder="Enter you name" #input1>
+<br> <br>
+
+<button (click)="getdata(input1.value)">Register</button>
+
+<ul *ngFor="let item of list">
+  <li>{{item.name}}</li>
+</ul>
+

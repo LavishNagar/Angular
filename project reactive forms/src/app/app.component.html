@@ -1,0 +1,37 @@
+<div class="form">
+<h2 id="registration">Registration Form</h2>
+
+<form [formGroup]="registrationform" (ngSubmit)="callingfunction()">
+<label for="fname">First name</label>
+<input type="text" id="fname" formControlName="Firstname" placeholder="Your name ...">
+
+<label for="lname">Last name</label>
+<input type="text" id="lname" formControlName="Lastname" placeholder="Your last name ...">
+
+<label for="email">E-mail</label>
+<input type="email" id="email" formControlName="email" placeholder="Your email ...">
+ 
+<label for="country">Country</label>
+<select id="country" formControlName="countryName">
+<option value="australia">Australia</option>
+<option value="India">India</option>
+<option value="italy">Italy</option>
+</select>
+
+<label id="gender" for="gender">Gender:</label>
+<input type="radio" id="male" value="male"  formControlName="Gender">
+<label for="male">Male</label>
+<input type="radio" id="female" value="female"  formControlName="Gender">
+<label for="female">Female</label>
+<input type="radio" id="other" value="other" formControlName="Gender">
+<label for="other">Other</label>
+
+<button>Submit</button>
+
+</form>
+</div>
+
+
+<!-- <ul *ngFor="let a of data">
+    <li>{{registrationform.value|json}}</li>
+</ul> -->

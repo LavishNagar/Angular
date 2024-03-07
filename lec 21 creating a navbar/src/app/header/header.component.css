@@ -1,0 +1,26 @@
+img{
+    width: 100px;
+
+
+}
+nav{
+    background-color: grey;
+    padding: 20px;
+    
+}
+ul{
+   float: right;
+    list-style-type: none;
+
+}
+ul li{
+    display: inline;
+    padding: 20px;
+
+}
+li a{
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;  /*remove underlines*/
+}

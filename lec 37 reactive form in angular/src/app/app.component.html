@@ -1,0 +1,14 @@
+<h1>welcome page {{title}}</h1>
+
+
+<form [formGroup]="loginformy" (ngSubmit)="loginuser()">
+
+
+    <input type="text" placeholder="Enter your name" formControlName="user"> <br> 
+    <span *ngIf="uservalidator && uservalidator.invalid && uservalidator.touched" style="color: red; background-color: brown;">This field is not Valid!</span><br><br>
+    <input type="text" placeholder="Enter your password"  formControlName="password"> <br> <br>
+    <button [disabled]="loginformy.invalid">Submit</button>
+
+</form>
+
+

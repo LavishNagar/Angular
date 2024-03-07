@@ -1,0 +1,16 @@
+<h1>welcome page {{title}}</h1>
+
+<form #forms="ngForm"  (ngSubmit)="funct(forms.value)">
+<input type="text" ngModel placeholder="Enter you name" name="user"> <br> <br>
+<input type="text" ngModel placeholder="Enter you email" name="Email"> <br> <br>
+<input type="text" ngModel placeholder="Enter you password" name="password"> <br> <br>
+<button>click to Register</button>
+
+
+</form>
+
+<ul *ngFor="let i of datalist">
+    <li>{{i|json}}</li>
+    <li>{{i.user}}</li>
+</ul>
+
