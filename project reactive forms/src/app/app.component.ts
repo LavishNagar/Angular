@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {FormControl,FormGroup} from '@angular/forms'
+import {FormControl,FormGroup,Validators} from '@angular/forms'
 
 @Component({
   selector: 'app-root',
@@ -9,18 +9,26 @@ import {FormControl,FormGroup} from '@angular/forms'
 export class AppComponent {
   title = 'Registration Form';
   registrationform=new FormGroup({
-    Firstname:new FormControl(''),
+    Firstname:new FormControl('',[Validators.required]),
     Lastname:new FormControl(''),
-    email:new FormControl(''),
+    email:new FormControl('',[Validators.email]),
     countryName:new FormControl(''),
     Gender:new FormControl('male')
 
   })
-// data:any[]=[];
+data:any[]=[];
 callingfunction(){
+  // this.registrationform.reset();
   console.warn(this.registrationform.value);
-  // this.data.push(this.registrationform.value);
-  this.registrationform.reset();
+
+  this.data.push(this.registrationform.value);
+
+  
 }
+
+get firstnamevalid(){
+  return this.registrationform.get('Firstname');
+}
+
 
 }

@@ -5,6 +5,8 @@
 <label for="fname">First name</label>
 <input type="text" id="fname" formControlName="Firstname" placeholder="Your name ...">
 
+<span *ngIf="firstnamevalid && firstnamevalid.invalid && firstnamevalid.touched" style="color:red;">Invalid! Enter your name</span><br>
+
 <label for="lname">Last name</label>
 <input type="text" id="lname" formControlName="Lastname" placeholder="Your last name ...">
 
@@ -26,12 +28,12 @@
 <input type="radio" id="other" value="other" formControlName="Gender">
 <label for="other">Other</label>
 
-<button>Submit</button>
+<button [disabled]="registrationform.invalid">Submit</button>
 
 </form>
 </div>
 
 
-<!-- <ul *ngFor="let a of data">
-    <li>{{registrationform.value|json}}</li>
-</ul> -->
+ <ul *ngFor="let a of data">
+    <li>{{a.Firstname}}--{{a.Lastname}}--{{a.email}}--{{a.Countryname}}--{{a.Gender}}</li>
+</ul>

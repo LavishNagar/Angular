@@ -1,6 +1,10 @@
 <h1>welcome page {{title}}</h1>
 <ul>
-    <li *ngFor="let user of users">{{user.name}}</li>
+    <li *ngFor="let user of userss">{{user.name}} -- {{user.age}}</li>
 </ul>
+
+<!-- <ul>
+    <li>{{userss|json}}</li>
+</ul> -->
 
 <app-footer></app-footer>

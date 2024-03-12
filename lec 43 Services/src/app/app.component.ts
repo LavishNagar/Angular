@@ -7,10 +7,10 @@ import {UserdataService} from './services/userdata.service'
 })
 export class AppComponent {
   title = 'blog-app';
-  users:any[]=[];
+  userss:any[]=[];
   constructor(private userdata:UserdataService){
     console.warn("userdata",userdata.users());
-    this.users=userdata.users();
+    this.userss=userdata.users();
   }
 
 }

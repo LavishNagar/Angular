@@ -10,11 +10,17 @@ export class AppComponent {
 //  name ='lavish';//property binding
 //   list=['a,','b','c','d'];
   //create a todo list 
+
   list:any[]=[];
   getdata(data:string){
     console.log(this.list);
     this.list.push({id:this.list.length,name:data});
+   
   }
+
+  
+
+
 
 
   

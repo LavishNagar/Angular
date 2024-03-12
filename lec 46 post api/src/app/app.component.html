@@ -1,0 +1,11 @@
+<h1>welcome page {{title}}</h1>
+
+<form #userForm="ngForm" (ngSubmit)="getUserFormData(userForm.value)">
+
+<input type="text" placeholder="enter you name" name="name" ngModel><br> <br>
+<input type="text" placeholder="enter your email" name="email" ngModel><br> <br>
+<input type="text" placeholder="enter your password" name="password" ngModel><br> <br>
+<button>click to register</button>
+
+
+</form>
